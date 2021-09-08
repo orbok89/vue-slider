@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pre, .next{
+    width: 10px;
+
+}
+.centro{
+    width: calc(100% - 20px);
+}
+.centro > img{
+    width: 100%;
+}
