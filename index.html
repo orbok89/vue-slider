@@ -11,16 +11,22 @@
 <body>
     <div id="root" class="container">
        <div class="wrap">
-            <div class="pre">
+            <div class="pre"  @click="sinistra">
                 <i class="fas fa-chevron-left"></i>
             </div>
             <div class="centro">
-                <img class="resize" src="img/image1.jpg" alt="imm1">
+                <img class="resize" :src="immagini[contatore]" alt="imm1">
             </div>
-            <div class="next">
+            <div class="next"  @click="destra">
                 <i class="fas fa-chevron-right"></i>
             </div>
+            <nav>
+                <div v-for= "pippo in immagini">
+                    <i  :class="attivo"   class="far fa-circle "></i>
+                </div>
+            </nav>
        </div>
+       
       
        
         
