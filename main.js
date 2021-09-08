@@ -4,7 +4,7 @@ var app = new Vue(
 
         data:{
             contatore: 0,
-            attivo: 'blu',
+            
             immagini:[
                "img/image1.jpg",
                "img/image2.jpg", 
@@ -15,6 +15,7 @@ var app = new Vue(
         methods:{
             destra: function(){
                 this.contatore= this.contatore+1;
+                
                 if(this.contatore == this.immagini.length){
                     this.contatore=0;
                 }
@@ -24,6 +25,9 @@ var app = new Vue(
                 if(this.contatore < 0){
                     this.contatore = (this.immagini.length -1);
                 }
+            },
+            colora: function(){
+                
             }
         }
     }

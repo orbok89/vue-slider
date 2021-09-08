@@ -21,8 +21,9 @@
                 <i class="fas fa-chevron-right"></i>
             </div>
             <nav>
-                <div v-for= "pippo in immagini">
-                    <i  :class="attivo"   class="far fa-circle "></i>
+                <div >
+                    <i  :class="(index == contatore) ? 'active' : null "  class="far fa-circle "
+                     v-for= "(pippo, index) in immagini" @click="colora"></i>
                 </div>
             </nav>
        </div>

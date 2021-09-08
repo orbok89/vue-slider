@@ -44,6 +44,6 @@ nav{
 nav > div > i {
     margin: auto 20px;
 }
-.blu{
+nav > div > i.active{
     color: blue
 }
